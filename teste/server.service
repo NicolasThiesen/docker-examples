@@ -1,0 +1,14 @@
+[Unit]
+After=network.target
+Description=Server memcashed
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/server
+
+[Install]
+WantedBy=multi-user.target
+
+
+
