@@ -1,7 +1,9 @@
-FROM amazonlinux:latest
+FROM amazonlinux:with-sources
+
+WORKDIR /
 LABEL Name=teste Version=0.0.1
 COPY . .
-RUN yum update -y 
+Run chmod +x /server
 EXPOSE 80
-WORKDIR /
-CMD /server
+
+CMD "./server"
