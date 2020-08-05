@@ -1,0 +1,6 @@
+# The Docker image to run your workspace in. Defaults to gitpod/workspace-full
+image: nginx
+# Ports to expose on workspace startup (optional)
+ports:
+  - port: 80
+    onOpen: open-preview
